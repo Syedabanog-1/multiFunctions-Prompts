@@ -1,0 +1,13 @@
+# Core tools
+
+openai-agents-sdk
+openai
+
+# For .env support
+
+py-dotenv
+
+# HTTP requests for weather API
+requests
+
+# Email and date/time are from Python stdlib, no need to list
