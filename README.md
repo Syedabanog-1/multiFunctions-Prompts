@@ -1,32 +1,35 @@
-🌐 Multi-Task Automation Agent:
-******************************
-This project is a powerful multi-agent assistant built using the OpenAI Agent SDK, function_tool, and real APIs. It can:
+:
 
-🌦️ Get real-time weather updates
+🌐 Multi-Tasking AI Agent System (Gemini + OpenAI Agents SDK)
+This project is a multi-functional AI assistant built using the OpenAI Agents SDK and Gemini API, capable of performing the following tasks:
 
-📧 Send real email notifications via SMTP
+🌦️ Real-time Weather Updates
 
-✈️ Book (mock) flights
+📧 Send Email Notifications
 
-🍜 Find nearby Chinese restaurants
+🍜 Find Nearby Chinese Restaurants
 
-🗓️ Schedule meetings
+🛫 Book Flights
 
-🛒 Search products based on filters
+📆 Schedule Meetings
 
-filters
+📷 Search & Purchase Digital Products
 
-🧠 Features:
-  *********
+💬 Ask General Questions (Gemini LLM)
 
-Task	          Description
 
-Weather	          Live data from OpenWeatherMap
-Email	          SMTP integration for real emails
-Flights	          Simulated flight bookings
-Restaurants	  Local restaurant recommendations
-Meetings	  Schedule team meetings
-Products	  Search for best-rated products
+
+🛠️ Available Tools & Prompts
+Function Name	               Prompt Example
+
+get_weather                	"What's the weather in Lahore?"
+send_email_notification	    "Send an email to my boss about project delay."
+find_chinese_restaurants	   "Find Chinese restaurants near me."
+book_flight	                "Book a flight from Karachi to Dubai on 15th July."
+schedule_meeting	           "Schedule a meeting on Monday at 3 PM with the dev team."
+search_product	             "Find and buy a digital camera under $500."
+ask_gemini	                 "Explain the theory of relativity."
+
 
 🛠️ Tech Stack:
   ***********
@@ -53,18 +56,19 @@ Create a .env file in the root directory with the following keys:
 OPENWEATHER_API_KEY=your_openweather_api_key
 EMAIL_USER=your_email@gmail.com
 EMAIL_PASS=your_email_password_or_app_password
+GEMINI_API_KEY=gemini_api_key
 
 
 🧪 Sample Output:
    ************
-🔹 Prompt: What's the weather in Lahore right now?
-✅ Response: The weather in Lahore is scattered clouds with 34°C.
+🔹 Prompt: What's the weather here in currunt loctaion right now?
+✅ Response: The weather in Karachi is scattered clouds with 34°C.
 
-🔹 Prompt: Send an email to sarah@example.com about the meeting reschedule
-✅ Response: ✅ Email sent to sarah@example.com successfully!
+🔹 Prompt: Send an email to syeda@example.com about the meeting reschedule
+✅ Response: ✅ Email sent to syeda@example.com successfully!
 
-🔹 Prompt: Book a flight from Karachi to Istanbul on 2025-07-20
-✅ Response: ✈️ Flight booked from Karachi to Istanbul on 2025-07-20. Confirmation ID: #FL-143859
+🔹 Prompt: Book a flight from Karachi to Singapore on 2025-07-25
+✅ Response: ✈️ Flight booked from Karachi to Singapore on 2025-07-25. Confirmation ID: #FL-143859
 
 ***Possible prompts for each Agent:
 Here are the possible prompts for each agent:
